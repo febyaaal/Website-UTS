@@ -1,0 +1,495 @@
+/* general */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: pink;
+    color: black;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+   flex: 1;
+}
+
+/* navbar Start */
+header {
+    width: 100%;
+    background: rgb(206, 150, 159);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    color: whitesmoke;
+    border-bottom: 1px solid #e894cf;
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: aliceblue;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo span {
+    color: palevioletred;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(252, 223, 243)     ;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding: 0.5rem;
+    border-bottom:wheat solid;
+    transform: scaleX(0);
+}
+
+.navbar .navbar-extra {
+    color: whitesmoke;
+}
+
+.navbar .navbar-nav a ::after {
+    content: '';
+    display: block;
+    padding-left: 0.5rem;
+    border-bottom: 0.1rem solid var(palevioletred);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: whitesmoke;
+    margin: 0 0.5rem;   
+}
+
+.navbar .navbar-extra a:hover {
+color: pink;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* Navbar End */
+
+
+/* Halaman Home start */
+.home {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+   
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.image-side img {
+    width: 300px;
+    border-bottom: 20px;
+    transform: transform 0.3s ease;
+}
+   
+.image-side img:hover {
+    transform: scale(1.05);
+}
+
+.text-side {
+    flex: 1;
+    text-align: center;
+}
+
+.text-side h2 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.text-side h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    
+}
+
+.text-side h1 span {
+    color: palevioletred;
+    font-style: italic;
+}
+
+.text-side p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    line-height: 1.4rem;
+    font-weight: 100;
+    color: palevioletred;
+}
+ 
+.btn {
+    background-color: #e894cf;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #eda8d8;
+    color: #985b82;
+}
+
+/* About Section Start*/
+.about{
+    padding: 8rem 7% 1.3rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.about h2 span {
+    color: palevioletred;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 300px;
+}
+
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: palevioletred;
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: white;
+}
+
+.about .row .content p span {
+    color:palevioletred;
+    font-style: italic;
+}
+/* About Section End*/
+
+/* Menu Section Start */
+
+ .menu{
+    padding: 8rem 7% 1.3rem;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: palevioletred;
+}
+
+.menu p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+}
+
+.menu .row .menu-card h3{
+    color: palevioletred;
+    font-style: italic    ;
+}
+
+
+
+.menu .row .menu-card img {
+    border-radius: 55%;
+    width: 60%;
+}
+
+.menu .row .menu-card img:hover {
+    transform: scale(1.05);
+}
+
+.menu .row .menu-card .menu-card-tittle {
+    margin-top: 1.rem auto 0.5rem;
+}
+
+/* Tabel */
+table {
+    margin: 50px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+th {
+    background-color: rgb(206, 150, 159);
+    color: white;
+    padding: 10px;
+    border: 1px solid #f8eaea;
+    font-size: 1.2rem;
+    
+}
+td {
+    padding: 10px;
+    border: 1px solid #f8eaea;
+}
+
+.table {
+    color: #7e4368;
+}
+/* Menu Section End */
+
+/* Contact Section Start*/
+.contact{
+    padding: 0 7% 1.3rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact h2 span {
+    color: palevioletred;
+}
+
+.contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color:#563a3e ;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
+
+.contact .row form {
+    flex-wrap: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+form .fields .input-filds {
+    display: flex;
+    width: 400;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.contact .row form .input-filds {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: pink;
+    border: 1px solid white;
+    padding-left: 2rem;
+}
+/* Contact Section End */
+
+
+/* Footer Start*/
+footer {
+    background:rgb(206, 150, 159) ;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+footer .links a:hover {
+    color: #7e4368;
+}
+
+
+footer .credit {
+    font-size: 1.rem;
+    color: white;
+}
+
+footer .credit a {
+    color: rgb(123, 69, 110);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+
+/* Footer End*/
+
+
+/* media queries */
+
+/* Laptop */
+    @media (max-width: 1366px ) {
+        html {
+            font-size: 75%;
+        }
+    }
+/* tablet */
+    @media (max-width: 768px ) {
+        html {
+            font-size: 62.5%;
+        }
+        #hamburger-menu {
+            display: inline-block;
+        }
+        /* media navbar */
+        .navbar .navbar-nav {
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            background-color: white;
+            width: 30rem;
+            height: 100vh;
+            transition: 0.3s;
+        }
+
+        .navbar .navbar-nav.active {
+            right: 0;
+        }
+
+        .navbar .navbar-nav a {
+            color: black;
+            display: block;
+            margin: 1.5rem;
+            padding: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .navbar .navbar-nav a::after {
+            transform-origin: 0 0;
+        }
+
+        .navbar .navbar-nav a:hover::after {
+            transform: scaleX(0.2);
+        }
+        /* media about */
+
+        .about .row {
+            flex-wrap: wrap;
+        }
+
+        .about .row .about-img img{
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .about .row .content{
+            padding: 0;
+        }
+
+        .about .row .content h3 {
+            margin-top: 1rem;
+            font-size: 1.6rem;
+        }
+
+    }
+
+/* mobile phone */
+    @media (max-width: 450px ) {
+        html {
+            font-size: 55%;
+        }
+    }
+
+   
